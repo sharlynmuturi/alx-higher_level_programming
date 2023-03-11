@@ -1,45 +1,47 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
+
 /**
- * insert_node - inserts a node
- * @head: head
- * @number: int to add
- * Return: new node
+ * insert_node - function to insert node in sorted list
+ * @head: double pointer of listint_t type
+ * @number: int type
+ * Return: address of new node or NULL if failed
  */
+
 listint_t *insert_node(listint_t **head, int number)
 {
-    listint_t *temp = NULL, *node = NULL;
+	listint_t *node, *temp;
 
-    if (head == NULL)
-        return (NULL);
+	node = malloc(sizeof(listint_t));
+	if (node == NULL)
+		return (NULL);
+	node->n = number;
+	node->next = NULL;
 
-    node = malloc(sizeof(listint_t *));
-    if (node == NULL)
-        return (NULL);
-    node->next = NULL;
-    node->n = number;
+	if (*head == NULL)
+	{
+		*head = node;
+		node->next = NULL;
+		return (node);
+	}
 
-    temp = *head;
-    while (temp)
-    {
-        if (temp->n >= number)
-        {
-            node->next = temp;
-            *head = node;
-            return (node);
-        }
-        else if (temp->n <= number && temp->next->n >= number)
-        {
-            if (temp->next != NULL)
-            {
-                node->next = temp->next;
-                temp->next = node;
-                return (node);
-            }
-        }
-        temp = temp->next;
-    }
-
-    return (NULL);
+	temp = *head;
+	while (temp->next != NULL)
+	{
+		if (number < temp->n)
+		{
+			node->next = temp;
+			*head = node;
+			return (node);
+		}
+		if (number <= temp->next->n)
+		{
+			node->next = temp->next;
+			temp->next = node;
+			return (node);
+		}
+		temp = temp->next;
+	}
+	node->next = NULL;
+	temp->next = node;
+	return (node);
 }
