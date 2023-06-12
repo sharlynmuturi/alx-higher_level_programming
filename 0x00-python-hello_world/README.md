@@ -10,6 +10,8 @@ guillaume@ubuntu:~/py/0x00$ export PYFILE=main.py
 guillaume@ubuntu:~/py/0x00$ ./0-run Best School 
 guillaume@ubuntu:~/py/0x00$
 
+
+
 1. Run inline
 Write a Shell script that runs Python code.  The Python code will be saved in the environment variable $PYCODE
 
@@ -18,6 +20,8 @@ guillaume@ubuntu:~/py/0x00$ ./1-run_inline
 Best School: 98
 guillaume@ubuntu:~/py/0x00$ 
 
+
+
 2. Hello, print
 Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 Use the function print
@@ -25,6 +29,8 @@ Use the function print
 guillaume@ubuntu:~/py/0x00$ ./2-print.py 
 "Programming is like building a multilingual puzzle
 guillaume@ubuntu:~/py/0x00$
+
+
 
 3. Print integer
 Complete this source code in order to print the integer stored in the variable number, followed by Battery street, followed by a new line.
@@ -41,6 +47,8 @@ guillaume@ubuntu:~/py/0x00$ ./3-print_number.py
  98 Battery street
 guillaume@ubuntu:~/py/0x00$
 
+
+
 4. Print float mandatory
 Complete the source code in order to print the float stored in the variable number with a precision of 2 digits.
 
@@ -54,6 +62,8 @@ You have to use f-strings
 guillaume@ubuntu:~/py/0x00$ ./4-print_float.py
 Float: 3.14
 guillaume@ubuntu:~/py/0x00$ 
+
+
 
 5. Print string
 Complete this source code in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
@@ -71,6 +81,8 @@ guillaume@ubuntu:~/py/0x00$ ./5-print_string.py
 Holberton SchoolHolberton SchoolHolberton School
 Holberton
 guillaume@ubuntu:~/py/0x00$ 
+
+
 
 6. Play with strings
 Complete this source code to print Welcome to Holberton School!
@@ -104,6 +116,8 @@ guillaume@ubuntu:~/py/0x00$ wc -l 7-edges.py
 8 7-edges.py
 guillaume@ubuntu:~/py/0x00$
 
+
+
 8. Create a new sentence
 Complete this source code to print object-oriented programming with Python, followed by a new line.
 
@@ -118,6 +132,8 @@ object-oriented programming with Python
 guillaume@ubuntu:~/py/0x00$ wc -l 8-concat_edges.py
 5 8-concat_edges.py
 guillaume@ubuntu:~/py/0x00$
+
+
 
 9. Easter Egg
 Write a Python script that prints “The Zen of Python”, by TimPeters, followed by a new line.
@@ -147,6 +163,8 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 guillaume@ubuntu:~/py/0x00$
+
+
 
 10. Linked list cycle
 Technical interview preparation:
@@ -323,6 +341,8 @@ Linked list has no cycle
 Linked list has a cycle
 carrie@ubuntu:~/0x00$
 
+
+
 11. Hello, write
 #advanced
 Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
@@ -340,6 +360,8 @@ guillaume@ubuntu:~/py/0x00$ ./100-write.py 2> q
 guillaume@ubuntu:~/py/0x00$ cat q
 and that piece of art is useful - Dora Korpar, 2015-10-19
 guillaume@ubuntu:~/py/0x00$
+
+
 
 12. Compile
 #advanced
@@ -371,6 +393,8 @@ guillaume@ubuntu:~/py/0x00$ od -t x1 main.pyc # SYSTEM DEPENDANT => CAN BE DIFFE
 0000160 3e 02 00 00 00 73 00 00 00 00
 0000172
 guillaume@ubuntu:~/py/0x00$
+
+
 
 13. ByteCode -> Python #1
 #advanced
