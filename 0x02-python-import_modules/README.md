@@ -15,9 +15,7 @@ Your program should print: <a value> + <b value> = <add(a, b) value> followed wi
 You can only use the word add_0 once in your code
 You are not allowed to use * for importing or __import__
 Your code should not be executed when imported - by using __import__, like the example below
-
 guillaume@ubuntu:~/0x02$ cat add_0.py
-
 #!/usr/bin/python3
 def add(a, b):
     """My addition function
@@ -31,17 +29,11 @@ def add(a, b):
     """
     return (a + b)
 
-
 guillaume@ubuntu:~/0x02$ ./0-add.py
-
 1 + 2 = 3
-
 guillaume@ubuntu:~/0x02$ cat 0-import_add.py
-
 __import__("0-add")
-
 guillaume@ubuntu:~/0x02$ python3 0-import_add.py 
-
 guillaume@ubuntu:~/0x02$ 
 
 
@@ -60,11 +52,8 @@ Your program should call each of the imported functions. See example below for f
 the word calculator_1 should be used only once in your file
 You are not allowed to use * for importing or __import__
 Your code should not be executed when imported
-
 guillaume@ubuntu:~/0x02$ cat calculator_1.py
-
 #!/usr/bin/python3
-
 def add(a, b):
     """My addition function
 
@@ -117,15 +106,10 @@ def div(a, b):
     return int(a / b)
 
 guillaume@ubuntu:~/0x02$ ./1-calculation.py
-
 10 + 5 = 15
-
 10 - 5 = 5
-
 10 * 5 = 50
-
 10 / 5 = 2
-
 guillaume@ubuntu:~/0x02$
 
 
@@ -143,35 +127,20 @@ the position of the argument (starting at 1) followed by :, followed by the argu
 Your code should not be executed when imported
 The number of elements of argv can be retrieved by using: len(argv)
 You do not have to fully understand lists yet, but imagine that argv can be used just like a C array: you can use an index to walk through it. There are other ways (which will be preferred for future project tasks), if you know them you can use them.
-
 guillaume@ubuntu:~/0x02$ ./2-args.py 
-
 0 arguments.
-
 guillaume@ubuntu:~/0x02$ ./2-args.py Hello
-
 1 argument:
-
 1: Hello
-
 guillaume@ubuntu:~/0x02$ ./2-args.py Hello Welcome To The Best School
-
 6 arguments:
-
 1: Hello
-
 2: Welcome
-
 3: To
-
 4: The
-
 5: Best
-
 6: School
-
 guillaume@ubuntu:~/0x02$ 
-
 
 
 3. Infinite addition
@@ -181,29 +150,18 @@ Write a program that prints the result of the addition of all arguments
 The output should be the result of the addition of all arguments, followed by a new line
 You can cast arguments into integers by using int() (you can assume that all arguments can be casted into integers)
 Your code should not be executed when imported
-
 guillaume@ubuntu:~/0x02$ ./3-infinite_add.py
-
 0
-
 guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 79 10
-
 89
-
 guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 79 10 -40 -300 89 
-
 -162
-
 guillaume@ubuntu:~/0x02$ 
-
 Last but not least, your program should also handle big numbers. And the good news is: if your program works for the above example, it will work for the following example:
-
 
 guillaume@ubuntu:~/0x02$ ./3-infinite_add.py 1111111111111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999990000000000000000000 11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334567788888899999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 11111111111111111111111111111111111111111111111111222222222222222222222222222333333333333333333334568900000011111111111111111111111111111111111111111111111111112222222222222222222222222222222222223435467866765443534434222222254444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555666666666666666666666666666666777777777777777777777777777777888888888888888888888888888888899999999999999999999999989999999999999999999
-
 guillaume@ubuntu:~/0x02$
-
 Remember how you did (or did not) do it in C? #pythoniscool
 
 
@@ -216,41 +174,28 @@ You should print one name per line, in alpha order
 You should print only names that do not start with __
 Your code should not be executed when imported
 Make sure you are running your code in Python3.8.x (hidden_4.pyc has been compiled with this version)
-
 guillaume@ubuntu:~/0x02$ curl -Lso "hidden_4.pyc" "https://github.com/alx-tools/0x02.py/raw/master/hidden_4.pyc"
-
 guillaume@ubuntu:~/0x02$ ./4-hidden_discovery.py | sort
-
 my_secret_santa
-
 print_hidden
-
 print_school
-
 guillaume@ubuntu:~/0x02$ 
 
-5. Everything can be imported
 
+
+5. Everything can be imported
 Write a program that imports the variable a from the file variable_load_5.py and prints its value.
 
 You are not allowed to use * for importing or __import__
 Your code should not be executed when imported
-
 guillaume@ubuntu:~/0x02$ cat variable_load_5.py
-
 #!/usr/bin/python3
-
 a = 98
-
 """Simple variable
-
 """
 
-
 guillaume@ubuntu:~/0x02$ ./5-variable_load.py
-
 98
-
 guillaume@ubuntu:~/0x02$
 
 
@@ -276,11 +221,8 @@ You can cast a and b into integers by using int() (you can assume that all argum
 The result should be printed like this: <a> <operator> <b> = <result>, followed by a new line
 You are not allowed to use * for importing or __import__
 Your code should not be executed when imported
-
 guillaume@ubuntu:~/0x02$ cat calculator_1.py
-
 #!/usr/bin/python3
-
 def add(a, b):
     """My addition function
 
@@ -332,25 +274,15 @@ def div(a, b):
     """
     return int(a / b)
 
-
 guillaume@ubuntu:~/0x02$ ./100-my_calculator.py ; echo $?
-
 Usage: ./100-my_calculator.py <a> <operator> <b>
-
 1
-
 guillaume@ubuntu:~/0x02$ ./100-my_calculator.py 3 + 5 ; echo $?
-
 3 + 5 = 8
-
 0
-
 guillaume@ubuntu:~/0x02$ ./100-my_calculator.py 3 H 5 ; echo $?
-
 Unknown operator. Available operators: +, -, * and /
-
 1
-
 guillaume@ubuntu:~/0x02$
 
 
@@ -362,13 +294,9 @@ Write a program that prints #pythoniscool, followed by a new line, in the standa
 
 Your program should be maximum 2 lines long
 You are not allowed to use print or eval or open or import sys in your file 101-easy_print.py
-
 guillaume@ubuntu:~/0x02$ ./101-easy_print.py
-
 #pythoniscool
-
 guillaume@ubuntu:~/0x02$ 
-
 
 
 8. ByteCode -> Python #3
@@ -423,14 +351,12 @@ Write the Python function def magic_calculation(a, b): that does exactly the sam
             106 RETURN_VALUE
             107 LOAD_CONST               0 (None)
             110 RETURN_VALUE
-
 Tip: Python bytecode
 
 
 
 9. Fast alphabet
 #advanced
-
 Write a program that prints the alphabet in uppercase, followed by a new line.
 
 Your program should be maximum 3 lines long
@@ -440,14 +366,8 @@ any conditional statements
 str.join()
 any string literal
 any system calls
-
 guillaume@ubuntu:~/0x02$ ./103-fast_alphabet.py
-
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
-
 guillaume@ubuntu:~/0x02$ wc -l 103-fast_alphabet.py
-
 3 103-fast_alphabet.py
-
 guillaume@ubuntu:~/0x02$
-
