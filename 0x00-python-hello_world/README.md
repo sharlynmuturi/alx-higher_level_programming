@@ -404,10 +404,15 @@ guillaume@ubuntu:~/py/0x00$ ./100-write.py
 and that piece of art is useful - Dora Korpar, 2015-10-19
 
 guillaume@ubuntu:~/py/0x00$ echo $?
+
 1
+
 guillaume@ubuntu:~/py/0x00$ ./100-write.py 2> q
+
 guillaume@ubuntu:~/py/0x00$ cat q
+
 and that piece of art is useful - Dora Korpar, 2015-10-19
+
 guillaume@ubuntu:~/py/0x00$
 
 
@@ -422,16 +427,25 @@ The Python file name will be stored in the environment variable $PYFILE
 The output filename has to be $PYFILEc (ex: export PYFILE=my_main.py => output filename: my_main.pyc)
 
 guillaume@ubuntu:~/py/0x00$ cat main.py 
+
 #!/usr/bin/python3
+
 print("Best School")
 
 guillaume@ubuntu:~/py/0x00$ export PYFILE=main.py
+
 guillaume@ubuntu:~/py/0x00$ ./101-compile
+
 Compiling main.py ...
+
 guillaume@ubuntu:~/py/0x00$ ls
+
 101-compile  main.py  main.pyc
+
 guillaume@ubuntu:~/py/0x00$ cat main.pyc | zgrep -c "Best School"
+
 1
+
 guillaume@ubuntu:~/py/0x00$ od -t x1 main.pyc # SYSTEM DEPENDANT => CAN BE DIFFERENT
 0000000 ee 0c 0d 0a 91 26 3e 58 31 00 00 00 e3 00 00 00
 0000020 00 00 00 00 00 00 00 00 00 02 00 00 00 40 00 00
